@@ -1,0 +1,48 @@
+#logo {
+    width: 100px;
+    height: auto;
+}
+#logo:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+#logo:active {
+    transform: scale(0.9);
+    transition: transform 0.1s ease;
+}
+#logo:focus {
+    outline: 2px solid #000;
+    outline-offset: 4px;
+}
+#logo:focus-visible {
+    outline: 2px solid #000;
+    outline-offset: 4px;
+}
+#logo:focus:not(:focus-visible) {
+    outline: none;
+}
+
+/* screen sizes */
+@media (max-width: 600px) {
+    #logo {
+        width: 80px;
+    }
+    nav {
+        display: none; /* Hide navigation on small screens */
+    }
+}
+@media (min-width: 601px) and (max-width: 1200px) {
+    #logo {
+        width: 90px;
+    }
+}
+@media (min-width: 1201px) {
+    #logo {
+        width: 100px;
+    }
+}
+@media print {
+    #logo {
+        display: none;
+    }
+}
